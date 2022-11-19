@@ -1,15 +1,14 @@
-# Ejercicio No. 28: Crecimiento poblacional de ciudades.
+# Ejercicio No. 27: Crecimiento poblacional de ciudades.
 
-# variables
-year = 1980
-a = 3.5
-b = 5
+año = 1980
+A = 3.5
+B = 5
 
 # processing
-while a < b:
-    a *= 1.07
-    b *= 1.05
-    year += 1
+while A < B:
+    A *= 1.07
+    B *= 1.05
+    año += 1
 
 # output
-print("Año de rebaso: ", year)
+print("Año de rebaso: ", año)

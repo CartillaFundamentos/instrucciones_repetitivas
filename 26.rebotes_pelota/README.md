@@ -1,8 +1,10 @@
-# Ejercicio No. 27: Rebotes de pelota.
+# Ejercicio No. 26: Rebotes de pelota.
 
-una pelota se deja caer desde una altura h, y en cada rebote sube el 10% menos del anterior. Hacer el diagrama de flujo y el programa en python, que lea h, y que calcule e imprima en cuál rebote la pelota no alcanza a subir la quinta parte de la altura inicial
+Se le pide al usuario que introduzca la altura inicial de la pelota, en este caso h, y luego se establece una variable llamada rebotes que contará cuantos rebotes llega a dar la pelota. Entonces se implementa un bucle while en el que se indica que:
 
-Analisis:
-Se recibe una entrada h, luego, con la condición de que la altura de la pelota despúes de un rebote no alcance la quinta parte de la altura inicial, se itera para que la altura de la pelota se disminuya en 10% cada por cada rebote, y el contador de esos rebotes aumenta en 1 cada vez. Al salir del bucle se imprime cuál fue el número de rebote en que la pelota dejó de alcanzar más de esa quinta parte.
+Mientras h sea mayor a la quinta parte de h, esta se irá decrementando en un 10% cada vez que la pelota rebote.
+
+Cuando la condición ya no se cumpla, se imprimirá en cuál rebote la pelota no alcanza la quinta parte de la altura inicial.
+
 
 ![diagrama](diagrama.png "diagrama de flujo")

@@ -1,6 +1,9 @@
+# Ejercicio No. 27: Crecimiento poblacional de ciudades.
 
+Se declaran las variables año, A y B; que representan el año que inicia, la población inicial de la ciudad A y población inicial de la ciudad A, respectivamente. Luego se crea un bucle while tal que:
 
-En 1980 la ciudad a tenía 3.5 millones de habitantes y una rata de crecimiento del 7% anual; y la ciudad b tenía 5 millones y una rata de crecimiento del 5%. Si el crecimiento poblacional se mantiene constante en las dos ciudades, hacer el diagrama de flujo y el programa en python que calcule e imprima en qué año la población de la ciudad a es mayor que la de la ciudad b
+Mientras la población de la ciudad A sea menor que la población de la ciudad B, La cantidad de habitantes de cada ciudad aumentará según su rata de crecimiento a la variable año se le suma 1.
 
-Analisis:
-las variables son a y b para las ciudades, cada una con su respectiva cantidad de habitantes, se hace un bucle para aumentar la cantidad de habitantes según su rata de crecimiento junto a un contador de años que se le suma a la variable para éste, al finalizar el bucle se imprime la cantidad final del año
+cuando deje de cumplirse la condición se imprimirá el año en el cual la ciudad A supera en población a la ciudad B.
+
+![Diagrama](diagrama.png "diagrama de flujo")

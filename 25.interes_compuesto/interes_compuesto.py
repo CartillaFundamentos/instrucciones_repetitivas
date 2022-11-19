@@ -1,14 +1,15 @@
-# Ejercicio No. 26: Interés compuesto.
+# Ejercicio No. 25: Interés compuesto.
 
 # input
-c = int(input("Ingrese el valor del capital: "))
+capital = int(input("Ingrese el valor del capital: "))
 
 # processing
-vc = c
-m = 0
-while vc < c*2:
-    m += 1
-    vc += 0.05 * vc
+doble = capital*2
+meses = 0
+
+while capital <= doble:
+    meses += 1
+    capital += capital*0.05
 
 # output
-print("El capital se duplicó al cabo de", m, "meses")
+print("El capital se duplicó al cabo de", meses, "meses")

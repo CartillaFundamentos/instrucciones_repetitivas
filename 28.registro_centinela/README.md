@@ -1,14 +1,9 @@
-# registro_centinela
+# Ejercicio No. 28: Registro centinela.
 
-# REGISTRO CENTINELA
+Primero, el usuario tiene que ingresar un código de estudiante que se guardará en la variable codigo, además se inicia una variable llamada reprobados que iniciará en cero. Ahora sí, se implementa un ciclo while tal que:
 
-Se dice que un ejercicio utiliza **Registro Centinela**, cuando el último dato de entrada tiene caractaristicas especiales, es decir, se diferencia de todos los demás, de modo tal que puede ser utilizado para determinar cuándo termina el proceso repetitivo que involucra la entrada de datos.
+mientras que el código del estudiante sea diferente a 0, se le solicita al usuario la nota del primer, segundo y tercer parcial; Con esta información se calcula la nota final, que se guardará en nota_final, variable que inmediatamente se imprime en pantalla junto a codigo. Para contar a los estudiantes reprobados tenemos que, si la nota_final es menor que 3 se le suma 1 a reprobados, luego se le vuelve a pedir al usuario un código.
 
-## Caso No. 1
+Este proceso se repetirá hasta que el usuario ingrese el registro centinela 0. ya terminado el proceso se imprime en pantalla la cantidad de alumnos reprobados.
 
-Hacer el diagrama de flujo y el programa en Python que por cada estudiante lea el código y las notas de los tres parciales de una materia, y que calcule e imprima el código y la nota final de cada estudiante.  No sabemos cuántos estudiantes son, pero despues de la información del último, se introduce cero en el campo correspondiente al código, de modo tal que sirva como **Centinela** para indicar cuando terminan los datos de entrada.  También se debe informar al final cuántos estudiantes perdieron la materia.
-
-
-## Análisis
-
-El contador de reprobados empieza en cero y la entrada es el código del estudiante y las notas de tres parciales. Mientras el código sea distinto de cero, las notas se promedian y se imprime el código ingresado junto a esa nota final, si la nota es menor que 3, la cantidad de reprobados aumenta en una unidad y de nuevo se le pide al usuario que ingrese los datos. En caso de que el código sea 0, se imprime la cantidad de reprobados y se finaliza el programa.
+![Diagrama](diagrama.png "diagrama de flujo")

@@ -1,4 +1,4 @@
-# Ejercicio No. 25: Hallar la suma de los n primeros números naturales
+# Ejercicio No. 24: Suma de los n primeros números naturales 2
 
 # input
 n = int(input("Ingrese el valor de n: "))

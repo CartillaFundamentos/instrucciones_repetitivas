@@ -1,14 +1,14 @@
-# Ejercicio No. 27: Rebotes de pelota.
+# Ejercicio No. 26: Rebotes de pelota.
 
 # input
 h = int(input("Ingrese la altura inicial de la pelota: "))
-ah = h
-bounces = 0
+quinta = h / 5
+rebotes = 0
 
 # processing
-while ah > h / 5:
-    ah *= 0.9
-    bounces += 1
+while h > quinta:
+    h -= h*0.1
+    rebotes += 1
 
 # output
-print("Número de rebotes:", bounces)
+print("Número de rebotes:", rebotes)
