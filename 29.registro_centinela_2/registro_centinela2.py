@@ -1,4 +1,4 @@
-# Ejercicio No. 30: Registro centinela 2.
+# Ejercicio No. 29: Registro centinela 2.
 
 # input
 num = int(input("Ingrese un número: "))
