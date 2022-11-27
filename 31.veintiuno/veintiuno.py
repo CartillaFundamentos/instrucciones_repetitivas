@@ -1,54 +1,39 @@
-# Ejercicio No. 31: Blackjack
-import random
+# Ejercicio No. 31: Veintiuno.
 
-dealer = 0
+from random import randint
 
-deck = random.randint(1, 12)
-while deck == 8 or deck == 9:
-    deck = random.randint(1, 12)
+j = 0
+d = 0
 
-print("Una de las dos cartas del dealer vale", deck)
-dealer += deck
+# el dealer toma dos cartas y una se le muestra al jugador
+m = randint(1, 12)
+d += m
+print("Una de las dos cartas del dealer vale", m)
+m = randint(1, 12)
+d += m
 
-deck = random.randint(1, 12)
-while deck == 8 or deck == 9:
-    deck = random.randint(1, 12)
-dealer += deck
+# el jugador recibe una carta
+m = randint(1, 12)
+j += m
 
-player = 0
-
-deck = random.randint(1, 12)
-while deck == 8 or deck == 9:
-    deck = random.randint(1, 12)
-player += deck
-
-deck = random.randint(1, 12)
-while deck == 8 or deck == 9:
-    deck = random.randint(1, 12)
-player += deck
-
-print("Su suma es:", player)
+print("Su suma es:", j)
 
 # input
-choice = int(input("Digite 1 para continuar o 0 para plantarse: "))
+seguir = int(input("Digite 1 para continuar o 0 para plantarse: "))
 
 # processing
-while choice == 1 and player < 22:
-    deck = random.randint(1, 12)
-    while deck == 8 or deck == 9:
-        deck = random.randint(1, 12)
-    player += deck
-    print("Su suma es:", player)
-    choice = int(input("Digite 1 para continuar o 0 para plantarse: "))
+while seguir == 1 and j < 22:
+    m = randint(1, 12)
+    j += m
+    print("Su suma es:", j)
+    seguir = int(input("Digite 1 para continuar o 0 para plantarse: "))
 
-while dealer < 17:
-    deck = random.randint(1, 12)
-    while deck == 8 or deck == 9:
-        deck = random.randint(1, 12)
-    dealer += deck
+while d < 17: # el dealer intenta acercarse al 21
+    m = randint(1, 12)
+    d += m
 
 # output
-if dealer > 21 and player < 22 or player > dealer and player < 22:
-    print("Ganaste, y el dealer tenía una suma de", dealer)
+if d > 21 and j < 22 or j > d and j < 22:
+    print("Ganaste, y el dealer tenía una suma de", d)
 else:
-    print("Perdiste, y el dealer tenía una suma de", dealer)
+    print("Perdiste, y el dealer tenía una suma de", d)

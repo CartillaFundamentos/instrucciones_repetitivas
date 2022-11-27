@@ -1,8 +1,9 @@
-# Ejercicio  : Sumar los dígitos de un número
+# Ejercicio No. 32: Sumar los dígitos de un número
+
+suma = 0
 
 # input
 num = int(input("Digite un número: "))
-suma = 0
 
 # processing
 while num > 0:

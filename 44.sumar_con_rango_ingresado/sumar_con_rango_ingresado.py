@@ -1,6 +1,13 @@
-# Ejercicio No. 21: Sumar con rango ingresado.
+# Ejercicio No. 44: Sumar con rango ingresado.
 
-n = int(input("ingite el valor de n: "))
 suma = 0
+
+# input
+n = int(input("Digite el valor de n: "))
+
+# processing
 for i in range(1, n+1):
-    suma += 1
+    suma += i
+
+# output
+print("Suma desde 1 hasta n:", suma)

@@ -1,18 +1,21 @@
-# Ejercicio No. 31: Adivinar un número.
+# Ejercicio No. 30: Adivinar un número.
 
-import random
-number = random.randint(0, 100)
+from random import randint
+num = randint(0, 100)
+intentos = 0
 
 # input
-attemp = int(input("Adivine el número: "))
+adivino = int(input("Adivina el número: "))
 
 # processing
-while attemp != number:
-    if attemp > number:
+while adivino != num:
+    if adivino < num:
         print("El número es más grande.")
     else:
         print("El número es más pequeño.")
-    attemp = int(input("Adivine el número: "))
+    intentos += 1
+    adivino = int(input("Adivina el número: "))
 
 # output
 print("¡Ese es el número!")
+print("Número de intentos:", intentos)

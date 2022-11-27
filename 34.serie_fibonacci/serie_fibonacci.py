@@ -1,12 +1,12 @@
+# Ejercicio No. 34: Serie Fabonacci.
+
 a = 0
 b = 1
+c = a + b
 
-suma = a + b
-a = b
-b = suma
-
-while suma < 900:
-    suma = a + b
+# processing
+while c < 1000:
+    print(c) # output
     a = b
-    b = suma
-    print(suma)
+    b = c
+    c = a + b

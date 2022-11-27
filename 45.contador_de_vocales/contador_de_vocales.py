@@ -1,8 +1,15 @@
-# Ejercicio No. 22: Contador de vocales.
+# Ejercicio No. 45: Contador de vocales.
 
-frase = input("Ingrese una frase: ")
-base = "aeiouAEIOU"
 num_vocales = 0
+base = "aeiouAEIOU"
+
+# input
+frase = input("Ingrese una frase: ")
+
+# processing
 for i in frase:
     if i in base:
         num_vocales += 1
+
+# output
+print("Número de vocales:", num_vocales)

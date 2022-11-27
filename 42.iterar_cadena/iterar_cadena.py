@@ -1,5 +1,7 @@
-# Ejercicio No. 19: Iterar cadena.
+# Ejercicio No. 42: Iterar cadena.
 
 texto = "UIS no es uno, somos todos"
+
+# processing
 for i in texto:
-    print(i)
+    print(i) # output
